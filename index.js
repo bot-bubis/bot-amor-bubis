@@ -1,3 +1,16 @@
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  const agora = new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" });
+  res.send(`Bot do Amor online! Hora atual: ${agora}`);
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Site de "Manter Acordado" rodando na porta ${port}`);
+});
+
 // AQUI: Carrega as variáveis de ambiente antes de tudo
 require("dotenv").config(); 
 
