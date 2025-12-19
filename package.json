@@ -1,0 +1,17 @@
+{
+  "name": "bot-amor",
+  "version": "1.0.1",
+  "description": "Bot do Discord que envia mensagens automáticas de amor para a minha esposa.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
